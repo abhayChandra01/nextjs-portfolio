@@ -8,13 +8,14 @@ const Technologies = () => (
     <SectionDivider divider />
     <SectionTitle>Skills</SectionTitle>
     <SectionText>
-      I've worked with multiple technologies as a developer to develop & maintain my projects.
+      I've worked with multiple technologies as a developer & maintained my projects.
     </SectionText>
     <List>
       {Skills.map((Skill) => (
         <ListItem key={Skill.slug}>
           <picture>
-            <Skill.Component size="3rem" />
+            {/* <Skill.Component size="3rem" /> */}
+            {Skill.icon}
           </picture>
           <ListContainer>
             <ListTitle>{Skill.title}</ListTitle>

@@ -32,16 +32,16 @@ export default class MyDocument extends Document {
       <Html lang='en-GB'>
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-          <meta name="title" content="Vipul Jha - Android & Flutter Dev" />
-          <meta name="description" content="Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts." />
+          <meta name="title" content="Abhay Chandra - Software Engineer" />
+          <meta name="description" content="Hey there, This is Abhay Chandra. I am a Software Engineer at Xelpmoc Design And Tech Ltd." />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Vipul Jha - Android & Flutter Dev" />
-          <meta property="og:description" content="Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts." />
-          <meta property="og:image" content="https://www.vipuljha.com/images/banner.png" />
+          <meta property="og:title" content="Abhay Chandra - Software Engineer" />
+          <meta property="og:description" content="Hey there, This is Abhay Chandra. I am a Software Engineer at Xelpmoc Design And Tech Ltd." />
+          <meta property="og:image" content="https://res.cloudinary.com/dmxegonfd/image/upload/v1671001598/oie_VRfS8PRCGBCi_on9ukx.png" />
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:title" content="Vipul Jha - Android & Flutter Dev" />
-          <meta property="twitter:description" content="Hey there, This is Vipul Jha aka lordarcadius. I am an Android & Flutter developer who also works on ROMs, Kernels, & Scripts." />
-          <meta property="twitter:image" content="https://www.vipuljha.com/images/banner.png" />
+          <meta property="twitter:title" content="Abhay Chandra - Software Engineer" />
+          <meta property="twitter:description" content="Hey there, This is Abhay Chandra. I am a Software Engineer at Xelpmoc Design And Tech Ltd." />
+          <meta property="twitter:image" content="https://res.cloudinary.com/dmxegonfd/image/upload/v1671001598/oie_VRfS8PRCGBCi_on9ukx.png" />
         </Head>
         <body>
           <Main />

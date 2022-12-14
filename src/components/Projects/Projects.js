@@ -1,35 +1,44 @@
 import React from 'react';
-
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
+import { Link } from '../../styles/GlobalComponents';
+import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
+import { ProjectsData } from '../../constants/constants';
+
 
 const Projects = () => (
   <Section id="projects">
     <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
+    <SectionTitle main>My Projects</SectionTitle>
     <GridContainer>
-      {projects.map((p, i) => {
+      {ProjectsData.map((p, i) => {
         return (
           <BlogCard key={i}>
-            <Img src={p.image} />
-
-            <HeaderThree title={p.title}>{p.title}</HeaderThree>
+          
+            <HeaderThree title={p.name}>{p.name}</HeaderThree>
+            
             <Hr />
+           
 
-            <CardInfo className="card-info">{p.description}</CardInfo>
+            <CardInfo className="card-info">{p.details}</CardInfo>
             <div>
-              <TitleContent>Tech Stack</TitleContent>
+              <TitleContent>Tech Used</TitleContent>
               <Hr />
               <TagList>
-                {p.tags.map((t, i) => {
+                {p.tech.map((t, i) => {
+                  return <Tag key={i}>{t}</Tag>;
+                })}
+              </TagList>
+              <TagList>
+                {p.othertech.map((t, i) => {
                   return <Tag key={i}>{t}</Tag>;
                 })}
               </TagList>
             </div>
+           
+            
             <UtilityList>
-              <ExternalLinks href={p.visit}>Live Preview</ExternalLinks>
-              <ExternalLinks href={p.source}>Source Code</ExternalLinks>
+             
+              <ExternalLinks href={p.github} target='_blank'>Source Code</ExternalLinks>
             </UtilityList>
           </BlogCard>
         );

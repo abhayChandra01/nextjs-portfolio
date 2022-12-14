@@ -1,42 +1,76 @@
-import { DiAndroid, DiTerminal } from "react-icons/di";
-import { SiJava, SiFirebase, SiGit } from "react-icons/si";
+import { DiAndroid, DiTerminal , DiJavascript1 } from "react-icons/di";
+import { SiJava, SiFirebase, SiGit, SiNextDotJs , SiRedux , SiMongodb } from "react-icons/si";
 import { RiFlutterFill } from "react-icons/ri";
+import { FaReact , FaNodeJs } from "react-icons/fa"
+import { TiHtml5 } from "react-icons/ti"
+import { AiOutlineConsoleSql , AiFillCodeSandboxCircle } from "react-icons/ai"
 
 export const Skills = [
   {
-    slug: "android",
-    Component: DiAndroid,
-    title: "Android",
-    Description: () => <>I work on ROMs, Kernels & Android Apps using Java.</>,
+    slug: "Next.js",
+    // Component: DiAndroid,
+    Description: () => <>Intermediate</>,
+    icon: <SiNextDotJs size={40}/>,
   },
   {
-    slug: "flutter",
-    Component: RiFlutterFill,
-    title: "Flutter",
-    Description: () => <>Currently working with Dart & Flutter for app development. </>,
+    slug: "React.js",
+    title: "React.js",
+    Description: () => <>Advanced</>,
+    icon: <FaReact size={40} />,
   },
   {
-    slug: "java",
-    Component: SiJava,
-    title: "Java",
-    Description: () => <>I can code in Java. But I mainly use it for Android app development.</>,
+    slug: "Redux.js Toolkit",
+    // Component: SiJava,
+    Description: () => <>Intermediate</>,
+    icon: <SiRedux size={40} />,
   },
   {
-    slug: "terminal",
-    Component: DiTerminal,
-    title: "Scripting",
-    Description: () => <>I have written dozens of Shell scripts for various purposes.</>,
+    slug: "Node.js",
+    title: "Node.js",
+    Description: () => <>Intermediate</>,
+    icon: <FaNodeJs size={40} />,
   },
   {
-    slug: "firebase",
-    Component: SiFirebase,
-    title: "Firebase",
-    Description: () => <>I have used Firebase for auth, database & analytics in my apps.</>,
+    slug: "JavaScript",
+    title: "JavaScript",
+    Description: () => <>Advanced</>,
+    icon: <DiJavascript1 size={40} />,
   },
   {
-    slug: "git",
-    Component: SiGit,
-    title: "Git",
-    Description: () => <>Git is a tool that I use every day. I use GitHub for pushing my code.</>,
+    slug: "HTML/CSS",
+    title: "HTML/CSS",
+    Description: () => <>Advanced</>,
+    icon: <TiHtml5 size={40} />,
   },
+  {
+    slug: "MySQL",
+    title: "MySQL",
+    Description: () => <>Intermediate</>,
+    icon: <AiOutlineConsoleSql size={40} />,
+  },
+  {
+    slug: "MongoDB",
+    title: "MongoDB",
+    Description: () => <>Advanced</>,
+    icon: <SiMongodb size={40} />,
+  },
+  {
+    slug: "FireBase",
+    title: "FireBase",
+    Description: () => <>Intermediate</>,
+    icon: <SiFirebase size={40} />,
+  },
+  {
+    slug: "C",
+    title: "C",
+    Description: () => <>Intermediate</>,
+    icon: <AiFillCodeSandboxCircle size={40} />,
+  },
+  {
+    slug: "C++",
+    title: "C++",
+    Description: () => <>Intermediate</>,
+    icon: <AiFillCodeSandboxCircle size={40} />,
+  },
+ 
 ];

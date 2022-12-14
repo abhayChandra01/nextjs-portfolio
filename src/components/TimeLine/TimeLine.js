@@ -43,8 +43,8 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id="about">
-      <SectionTitle>My Journey</SectionTitle>
+    <Section id="education">
+      <SectionTitle>Where I've Studied</SectionTitle>
       <SectionText>
         In my journey to date, I have learned a great deal about development and life in general.
       </SectionText>
