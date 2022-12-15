@@ -9,6 +9,7 @@ export const Skills = [
   {
     slug: "Next.js",
     // Component: DiAndroid,
+    title:"Next.js",
     Description: () => <>Intermediate</>,
     icon: <SiNextDotJs size={40}/>,
   },
@@ -21,6 +22,7 @@ export const Skills = [
   {
     slug: "Redux.js Toolkit",
     // Component: SiJava,
+    title:"Redux.js Toolkit",
     Description: () => <>Intermediate</>,
     icon: <SiRedux size={40} />,
   },
