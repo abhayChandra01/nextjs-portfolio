@@ -17,7 +17,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>&copy; 2021 <Link target="_blank" href="https://www.linkedin.com/in/abhay-chandra">  Abhay Chandra</Link> . All rights reserved.</Slogan>
+          <Slogan>&copy; 2022 <Link target="_blank" href="https://www.linkedin.com/in/abhay-chandra">  Abhay Chandra</Link> . All rights reserved.</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons target="_blank" href="https://github.com/abhayChandra01">
