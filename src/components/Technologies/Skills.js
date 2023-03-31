@@ -7,13 +7,6 @@ import { AiOutlineConsoleSql , AiFillCodeSandboxCircle } from "react-icons/ai"
 
 export const Skills = [
   {
-    slug: "Next.js",
-    // Component: DiAndroid,
-    title:"Next.js",
-    Description: () => <>Intermediate</>,
-    icon: <SiNextDotJs size={40}/>,
-  },
-  {
     slug: "React.js",
     title: "React.js",
     Description: () => <>Advanced</>,
@@ -25,6 +18,12 @@ export const Skills = [
     title:"Redux.js Toolkit",
     Description: () => <>Intermediate</>,
     icon: <SiRedux size={40} />,
+  },
+  {
+    slug: "Next.js",
+    title:"Next.js",
+    Description: () => <>Intermediate</>,
+    icon: <SiNextDotJs size={40}/>,
   },
   {
     slug: "Node.js",
