@@ -1,9 +1,24 @@
-import React from 'react';
-import { Link } from '../../styles/GlobalComponents';
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { ProjectsData } from '../../constants/constants';
-
+import React from "react";
+import { Link } from "../../styles/GlobalComponents";
+import {
+  BlogCard,
+  CardInfo,
+  ExternalLinks,
+  GridContainer,
+  HeaderThree,
+  Hr,
+  Tag,
+  TagList,
+  TitleContent,
+  UtilityList,
+  Img,
+} from "./ProjectStyles";
+import {
+  Section,
+  SectionDivider,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import { ProjectsData } from "../../constants/constants";
 
 const Projects = () => (
   <Section id="projects">
@@ -13,11 +28,9 @@ const Projects = () => (
       {ProjectsData.map((p, i) => {
         return (
           <BlogCard key={i}>
-          
             <HeaderThree title={p.name}>{p.name}</HeaderThree>
-            
+
             <Hr />
-           
 
             <CardInfo className="card-info">{p.details}</CardInfo>
             <div>
@@ -34,11 +47,11 @@ const Projects = () => (
                 })}
               </TagList>
             </div>
-           
-            
+
             <UtilityList>
-             
-              <ExternalLinks href={p.github} target='_blank'>Source Code</ExternalLinks>
+              <ExternalLinks href={p.github} target="_blank">
+                Link
+              </ExternalLinks>
             </UtilityList>
           </BlogCard>
         );

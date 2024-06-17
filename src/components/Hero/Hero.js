@@ -1,8 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import { Section, SectionText, SectionTitle, Link } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+  Link,
+} from "../../styles/GlobalComponents";
+import Button from "../../styles/GlobalComponents/Button";
+import { LeftSection } from "./HeroStyles";
 import Typewriter from "typewriter-effect";
 
 const Hero = (props) => (
@@ -14,29 +19,32 @@ const Hero = (props) => (
         </SectionTitle>
         <SectionText>
           This is
-          <SectionTitle style={{fontSize:'3rem'}}>
+          <SectionTitle style={{ fontSize: "3rem" }}>
             Abhay Chandra
           </SectionTitle>
           <Typewriter
-  
-       onInit={(typewriter)=> {
-  
-       typewriter
-        
-       .typeString("Software Engineer")
-         
-       .pauseFor(1000)
-       .deleteAll()
-       .typeString("Full Stack Web Developer")
-       .start();
-       }}
-       /><br />
-          I am a Software Engineer at Xelpmoc Design And Tech Ltd.
+            onInit={(typewriter) => {
+              typewriter
+
+                .typeString("Software Engineer")
+
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString("Full Stack Web Developer")
+                .start();
+            }}
+          />
+          <br />
+          Proficient in React.js
         </SectionText>
-        <Button onClick={(e) => {
-          e.preventDefault();
-          window.location.href = '/files/resume.pdf';
-        }}>My Resume</Button>
+        <Button
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "/files/resume.pdf";
+          }}
+        >
+          My Resume
+        </Button>
       </LeftSection>
     </Section>
   </>
